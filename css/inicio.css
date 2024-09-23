@@ -37,8 +37,10 @@ header>p{
 }
 
 nav{
-    padding: 10px;
+    padding-bottom: 20px;
     font-weight: bold;
+    background-color: black;
+    text-align: center;
 }
 
 a{
