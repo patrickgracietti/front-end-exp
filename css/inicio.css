@@ -80,6 +80,7 @@ a:hover {
 	background-color: rgb(74, 74, 74);
 	color: rgb(255, 255, 255);
 	transition-duration: 150ms;
+	border-radius: 6px;
 }
 
 footer {
