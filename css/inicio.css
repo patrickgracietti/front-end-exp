@@ -2,88 +2,87 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root{
-    --fonte01: "Roboto", sans-serif;
+:root {
+	--fonte01: 'Roboto', sans-serif;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    font-family: var(--fonte01);
+* {
+	padding: 0;
+	margin: 0;
+	font-family: var(--fonte01);
 }
 
-.logo{
-    width: 300px;
-    height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.logo {
+	width: 300px;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
-header{
-    text-align: center;
-    background-color: black;
-    color: white;
+header {
+	text-align: center;
+	background-color: black;
+	color: white;
 }
 
-header>h1{
-    padding-top: 50px;
-    font-size: 3em;
-    color: rgb(255, 255, 255);
+header > h1 {
+	padding-top: 50px;
+	font-size: 3em;
+	color: rgb(255, 255, 255);
 }
 
-header>p{
-    padding-bottom: 25px;
+header > p {
+	padding-bottom: 25px;
 }
 
-nav{
-    padding: 10px;
-    font-weight: bold;
-    background-color: black;
-    text-align: center;
-    box-shadow: 10px 10px 19px 3px rgba(0, 0, 0, 0.255);
+nav {
+	padding: 10px;
+	font-weight: bold;
+	background-color: black;
+	text-align: center;
+	box-shadow: 10px 10px 19px 3px rgba(0, 0, 0, 0.255);
 }
 
-main{
-    color: white;
-    background-color: white;
-    padding: 10px;
-    margin: auto;
-    text-align: center;
-    background-image: url('img/pattern01.png');
-    background-attachment: fixed;
+main {
+	color: white;
+	background-color: white;
+	padding: 10px;
+	margin: auto;
+	text-align: center;
+	background-image: url('/img/pattern01.png');
+	background-attachment: fixed;
 }
 
-#sobre{
-    max-width: 1000px;
-    margin: auto;
+#sobre {
+	max-width: 1000px;
+	margin: auto;
 }
 
-.img-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+.img-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
 }
 
-.img-container>img{
-    width: 600px;
-
+.img-container > img {
+	width: 600px;
 }
 
-a{
-    color: rgb(123, 123, 123);
-    text-decoration: none;
-    font-weight: bolder;
+a {
+	color: rgb(123, 123, 123);
+	text-decoration: none;
+	font-weight: bolder;
 }
-a:hover{
-    text-decoration: none;
-    background-color: rgb(74, 74, 74);
-    color: rgb(255, 255, 255);
-    transition-duration: 150ms;
+a:hover {
+	text-decoration: none;
+	background-color: rgb(74, 74, 74);
+	color: rgb(255, 255, 255);
+	transition-duration: 150ms;
 }
 
-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
+footer {
+	background-color: black;
+	color: white;
+	text-align: center;
 }
