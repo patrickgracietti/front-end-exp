@@ -12,13 +12,6 @@
 	font-family: var(--fonte01);
 }
 
-.logo {
-	width: 300px;
-	height: auto;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
 header {
 	text-align: center;
 	background-color: black;
@@ -36,11 +29,25 @@ header > p {
 }
 
 nav {
-	padding: 10px;
+	padding: 20px;
 	font-weight: bold;
 	background-color: black;
 	text-align: center;
-	box-shadow: 10px 10px 19px 3px rgba(0, 0, 0, 0.255);
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+	padding: 10px 15px;
+	color: rgb(123, 123, 123);
+	text-decoration: none;
+	border-radius: 8px;
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+	background-color: rgb(74, 74, 74);
+	color: white;
+	border-radius: 8px;
 }
 
 main {
@@ -52,29 +59,27 @@ main {
 	background-image: url('../img/pattern01.png');
 	background-size: auto;
 	background-attachment: fixed;
+	background-position: center;
 }
 
-#sobre {
-	max-width: 1000px;
-	margin: auto;
+p {
+	font-size: 1.1rem;
+	line-height: 1.6;
 }
 
-.img-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px;
-}
-
-.img-container > img {
-	width: 600px;
+h2 {
+	font-size: 2rem;
+	margin-bottom: 15px;
 }
 
 a {
 	color: rgb(123, 123, 123);
 	text-decoration: none;
 	font-weight: bolder;
+	font-size: 1rem;
+	transition: color 0.2s, background-color 0.2s, border-radius 0.2s;
 }
+
 a:hover {
 	text-decoration: none;
 	background-color: rgb(74, 74, 74);
@@ -86,5 +91,62 @@ a:hover {
 footer {
 	background-color: black;
 	color: white;
+	padding: 20px;
 	text-align: center;
+	border-top: 1px solid #444;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+#sobre {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.logo {
+	width: 300px;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.img-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	flex-wrap: wrap;
+}
+
+.img-container > img {
+	width: 100%;
+	max-width: 600px;
+	margin-bottom: 20px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-container > img:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+	nav a {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.img-container {
+		flex-direction: column;
+		justify-content: space-evenly;
+		flex-wrap: nowrap;
+	}
+
+	.img-container > img {
+		width: 45%;
+		max-width: none;
+		margin-bottom: 10px;
+	}
 }
