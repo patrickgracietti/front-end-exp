@@ -23,7 +23,6 @@ header{
     text-align: center;
     background-color: black;
     color: white;
-    box-shadow: 10px 10px 19px 3px rgba(0, 0, 0, 0.255);
 }
 
 header>h1{
@@ -37,10 +36,38 @@ header>p{
 }
 
 nav{
-    padding-bottom: 20px;
+    padding: 10px;
     font-weight: bold;
     background-color: black;
     text-align: center;
+    box-shadow: 10px 10px 19px 3px rgba(0, 0, 0, 0.255);
+}
+
+main{
+    color: white;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    background-image: url('/img/pattern02.png');
+    background-attachment: fixed;
+}
+
+#sobre{
+    max-width: 1000px;
+    margin: auto;
+}
+
+.img-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.img-container>img{
+    width: 600px;
+
 }
 
 a{
@@ -50,9 +77,8 @@ a{
 }
 a:hover{
     text-decoration: none;
-    background-color: red;
+    background-color: rgb(74, 74, 74);
     color: rgb(255, 255, 255);
-    border-radius: 3px;
     transition-duration: 150ms;
 }
 
