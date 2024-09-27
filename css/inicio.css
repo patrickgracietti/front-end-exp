@@ -110,7 +110,7 @@ html {
 	position: relative;
 	width: 400px; /* Adjust based on your image size */
 	height: 150px; /* Adjust based on your image size */
- text-align: center;
+	overflow: hidden; /* Ensure images don't go outside the container */
 }
 
 .img-container img {
@@ -128,22 +128,15 @@ html {
 	opacity: 0; /* Hide the second image initially */
 }
 
-#img-container-1:hover #img-tick {
-	opacity: 0; /* Hide the first image on hover */
-}
-#img-container-2:hover #img-kadu {
-	opacity: 0; /* Hide the first image on hover */
-}
+/* Hover effect to fade out the first image and show the second one */
+#img-container-1:hover #img-tick,
+#img-container-2:hover #img-kadu,
 #img-container-3:hover #img-japa {
 	opacity: 0; /* Hide the first image on hover */
 }
 
-#img-container-1:hover #img-tick-overlap {
-	opacity: 1; /* Show the second image on hover */
-}
-#img-container-2:hover #img-kadu-overlap {
-	opacity: 1; /* Show the second image on hover */
-}
+#img-container-1:hover #img-tick-overlap,
+#img-container-2:hover #img-kadu-overlap,
 #img-container-3:hover #img-japa-overlap {
 	opacity: 1; /* Show the second image on hover */
 }
