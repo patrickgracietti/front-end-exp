@@ -44,16 +44,6 @@ nav a {
 	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-main{
-    color: white;
-    background-color: white;
-    padding: 10px;
-    margin: auto;
-    text-align: center;
-    background-image: url('/img/pattern02.png');
-    background-attachment: fixed;
-}
-
 main {
 	color: white;
 	background-color: white;
@@ -117,66 +107,46 @@ html {
 }
 
 .img-container {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px;
-	flex-wrap: wrap;
 	position: relative;
+	width: 600px; /* Adjust based on your image size */
+	height: 250px; /* Adjust based on your image size */
 }
 
-.img-container > img {
+.img-container img {
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 100%;
-	max-width: 600px;
-	margin-bottom: 20px;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.img-container > img:hover {
-	transform: scale(1.05);
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+	height: 100%;
+	transition: opacity 0.5s ease; /* Smooth transition for fading */
 }
 
 #img-tick-overlap,
 #img-kadu-overlap,
 #img-japa-overlap {
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0.8;
-	transition: opacity 0.3s ease, transform 0.3s ease;
+	opacity: 0; /* Hide the second image initially */
 }
 
-#img-tick-overlap:hover,
-#img-kadu-overlap:hover,
-#img-japa-overlap:hover {
-	transform: scale(1.05);
-	opacity: 1;
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+#img-container-1:hover #img-tick {
+	opacity: 0; /* Hide the first image on hover */
 }
 
-#img-tick,
-#img-kadu,
-#img-japa {
-	position: relative;
-	z-index: 1;
+#img-container-1:hover #img-tick-overlap {
+	opacity: 1; /* Show the second image on hover */
 }
 
-@media (max-width: 768px) {
-	nav a {
-		display: block;
-		margin-bottom: 10px;
-	}
+#img-container-2:hover #img-kadu {
+	opacity: 0; /* Hide the first image on hover */
+}
 
-	.img-container {
-		flex-direction: column;
-		justify-content: space-evenly;
-		flex-wrap: nowrap;
-	}
+#img-container-2:hover #img-kadu-overlap {
+	opacity: 1; /* Show the second image on hover */
+}
 
-	.img-container > img {
-		width: 45%;
-		max-width: none;
-		margin-bottom: 10px;
-	}
+#img-container-3:hover #img-japa {
+	opacity: 0; /* Hide the first image on hover */
+}
+
+#img-container-3:hover #img-japa-overlap {
+	opacity: 1; /* Show the second image on hover */
 }
