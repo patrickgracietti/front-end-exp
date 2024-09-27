@@ -110,6 +110,7 @@ html {
 	position: relative;
 	width: 400px; /* Adjust based on your image size */
 	height: 150px; /* Adjust based on your image size */
+ text-align: center;
 }
 
 .img-container img {
