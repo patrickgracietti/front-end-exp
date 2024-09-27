@@ -108,8 +108,8 @@ html {
 
 .img-container {
 	position: relative;
-	width: 600px; /* Adjust based on your image size */
-	height: 250px; /* Adjust based on your image size */
+	width: 400px; /* Adjust based on your image size */
+	height: 150px; /* Adjust based on your image size */
 }
 
 .img-container img {
