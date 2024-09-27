@@ -2,45 +2,46 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-:root{
-    --fonte01: "Roboto", sans-serif;
+:root {
+	--fonte01: 'Roboto', sans-serif;
 }
 
-*{
-    padding: 0;
-    margin: 0;
-    font-family: var(--fonte01);
+* {
+	padding: 0;
+	margin: 0;
+	font-family: var(--fonte01);
 }
 
-.logo{
-    width: 300px;
-    height: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+header {
+	text-align: center;
+	background-color: black;
+	color: white;
 }
 
-header{
-    text-align: center;
-    background-color: black;
-    color: white;
+header > h1 {
+	padding-top: 50px;
+	font-size: 3em;
+	color: rgb(255, 255, 255);
 }
 
-header>h1{
-    padding-top: 50px;
-    font-size: 3em;
-    color: rgb(255, 255, 255);
+header > p {
+	padding-bottom: 25px;
 }
 
-header>p{
-    padding-bottom: 25px;
+nav {
+	padding: 20px;
+	font-weight: bold;
+	background-color: black;
+	text-align: center;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-nav{
-    padding: 10px;
-    font-weight: bold;
-    background-color: black;
-    text-align: center;
-    box-shadow: 10px 10px 19px 3px rgba(0, 0, 0, 0.255);
+nav a {
+	padding: 10px 15px;
+	color: rgb(123, 123, 123);
+	text-decoration: none;
+	border-radius: 8px;
+	transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 main{
@@ -53,37 +54,129 @@ main{
     background-attachment: fixed;
 }
 
-#sobre{
-    max-width: 1000px;
-    margin: auto;
+main {
+	color: white;
+	background-color: white;
+	padding: 10px;
+	margin: auto;
+	text-align: center;
+	background-image: url('../img/pattern01.png');
+	background-size: auto;
+	background-attachment: fixed;
+	background-position: center;
 }
 
-.img-container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+p {
+	font-size: 1.1rem;
+	line-height: 1.6;
 }
 
-.img-container>img{
-    width: 600px;
-
+h2 {
+	font-size: 2rem;
+	margin-bottom: 15px;
 }
 
-a{
-    color: rgb(123, 123, 123);
-    text-decoration: none;
-    font-weight: bolder;
-}
-a:hover{
-    text-decoration: none;
-    background-color: rgb(74, 74, 74);
-    color: rgb(255, 255, 255);
-    transition-duration: 150ms;
+a {
+	color: rgb(123, 123, 123);
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: 1rem;
+	transition: color 0.2s, background-color 0.2s, border-radius 0.2s;
 }
 
-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
+a:hover {
+	text-decoration: none;
+	background-color: rgb(74, 74, 74);
+	color: rgb(255, 255, 255);
+	transition-duration: 150ms;
+	border-radius: 6px;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	border-top: 1px solid #444;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+#sobre {
+	max-width: 1000px;
+	margin: auto;
+}
+
+.logo {
+	width: 300px;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.img-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.img-container > img {
+	width: 100%;
+	max-width: 600px;
+	margin-bottom: 20px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-container > img:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#img-tick-overlap,
+#img-kadu-overlap,
+#img-japa-overlap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+	transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#img-tick-overlap:hover,
+#img-kadu-overlap:hover,
+#img-japa-overlap:hover {
+	transform: scale(1.05);
+	opacity: 1;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#img-tick,
+#img-kadu,
+#img-japa {
+	position: relative;
+	z-index: 1;
+}
+
+@media (max-width: 768px) {
+	nav a {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	.img-container {
+		flex-direction: column;
+		justify-content: space-evenly;
+		flex-wrap: nowrap;
+	}
+
+	.img-container > img {
+		width: 45%;
+		max-width: none;
+		margin-bottom: 10px;
+	}
 }
