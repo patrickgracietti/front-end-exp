@@ -101,6 +101,12 @@ html {
 	padding-bottom: 20px;
 }
 
+.img-wrapper {
+	display: flex;
+	justify-content: center; /* Aligns the items horizontally in the center */
+	gap: 20px; /* Adds space between the image containers */
+}
+
 .img-container {
 	position: relative;
 	width: 400px; /* Adjust based on your image size */
