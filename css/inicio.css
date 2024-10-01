@@ -104,7 +104,6 @@ html {
 .img-wrapper {
 	display: flex;
 	justify-content: center; /* Aligns the items horizontally in the center */
-	gap: 20px; /* Adds space between the image containers */
 }
 
 .img-container {
@@ -118,8 +117,8 @@ html {
 	position: absolute;
 	top: 0;
 	left: 0;
-	width: 100%;
-	height: 100%;
+	max-width: 100%;
+	height: auto;
 	transition: opacity 0.5s ease; /* Smooth transition for fading */
 }
 
